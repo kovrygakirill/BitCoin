@@ -102,7 +102,7 @@ def send_msg_for_admin(message):
     msg_for_admin = f"Somebody run your bot: Name - {message.from_user.first_name}, " \
                     f"Last_name - {message.from_user.last_name}, " \
                     f"username - {message.from_user.username}"
-    BOT.send_sticker(message.chat.id, sticker='CAACAgIAAxkBAAICzWIvTTYGaRSjvZT2Dldt86dtu_MWAAIkEQACfsZ5SGES9vQGgHdtIwQ')
+    BOT.send_sticker(CHAT_ID_ADMIN, sticker='CAACAgIAAxkBAAICzWIvTTYGaRSjvZT2Dldt86dtu_MWAAIkEQACfsZ5SGES9vQGgHdtIwQ')
     BOT.send_message(CHAT_ID_ADMIN, msg_for_admin, parse_mode="html")
 
 
